@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
  *
  */
 @Configuration
-@EnableAutoConfiguration
+@EnableAutoConfiguration //引入XxxAutoConfiguration类，如果不用它，需要手动引入@EnableXxx
 @ComponentScan //默认扫描所在包下面的class。
 //@SpringBootApplication //等同于上面三个注解
 @EnableHelloStarter //启用自定义的starter模块。相当于导入Auto Configuration类；其中的package name尽量不要和调用者的package name相同。
